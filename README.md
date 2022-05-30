@@ -23,3 +23,9 @@ ya para la ejecucion del proyecto podremos ejecutar:
 -ng serve -o
 
 y nos desplegara el navegador y seria lo suficiente para ejecutar el proyecto. 
+
+La aplicación está desplegada en Firebase Hosting : 
+
+https://exercisediimo.web.app/auth
+
+este sería el enlace del login o auth.
