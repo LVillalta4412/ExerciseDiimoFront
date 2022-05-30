@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "exercisediimo"
+  },
+  "targets": {
+    "exercisediimo": {
+      "hosting": {
+        "ExerciseDiimoFront": [
+          "exercisediimo"
+        ]
+      }
+    }
+  }
+}

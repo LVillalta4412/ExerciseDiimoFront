@@ -1,0 +1,43 @@
+table {
+  width: 100%;
+
+}
+
+table td, th {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+:host {
+  justify-content: center;
+}
+
+.mat-elevation-z8{
+  padding: 10px !important;
+}
+
+.mat-elevation-z6{
+  width: 60% !important;
+  padding: 10px !important;
+}
+
+.mat-form-field {
+  width: 100%;
+  min-width: 300px;
+}
+
+mat-card-title,
+mat-card-content {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+mat-card{
+  border: none !important;
+  box-shadow: none !important;
+}
+

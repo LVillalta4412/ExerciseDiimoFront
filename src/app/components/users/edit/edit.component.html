@@ -1,0 +1,46 @@
+<button mat-button color="primary" (click)="Logout()">Logout </button>
+<mat-card>
+  <mat-card-title>add users</mat-card-title>
+<mat-card-content>
+<form [formGroup]="form" (ngSubmit)="updateUsers()">
+  <div *ngFor="let users of user">
+
+<p>
+  <mat-form-field>
+    <input type="text" matInput placeholder="Name" [(ngModel)]="users.name" formControlName="name">
+  </mat-form-field>
+</p>
+<p>
+  <mat-form-field>
+    <input type="text" matInput placeholder="Username" [(ngModel)]="users.username" formControlName="username">
+  </mat-form-field>
+</p>
+<p>
+  <mat-form-field>
+    <input type="text" matInput placeholder="Email" [(ngModel)]="users.email" formControlName="email">
+  </mat-form-field>
+</p>
+<p>
+  <mat-form-field>
+    <input type="number" matInput placeholder="Phone" [(ngModel)]="users.phone" formControlName="phone">
+  </mat-form-field>
+</p>
+<p>
+  <mat-form-field>
+    <input type="date" matInput placeholder="Date of birth" [(ngModel)]="users.date_of_birth" formControlName="date_of_birth">
+  </mat-form-field>
+</p>
+
+  <mat-divider></mat-divider>
+<br>
+
+<div class="button">
+  <button type="submit" mat-button>Update user</button>
+  <button mat-button color="primary" (click)="Goback()">Go back</button>
+</div>
+</div>
+</form>
+</mat-card-content>
+</mat-card>
+
+

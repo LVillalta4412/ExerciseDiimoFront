@@ -1,0 +1,75 @@
+<button mat-button color="primary" (click)="Logout()">Logout </button>
+
+<div class="button">
+  <button mat-button color="primary" (click)="UrlAdd()">Add users</button>
+  <button mat-button color="primary" (click)="UrlProducts()">Products list</button>
+</div>
+
+<div class="mat-elevation-z8">
+  <table class="default">
+
+    <tr>
+ <th>
+  Id
+ </th>
+ <th>
+  Name
+ </th>
+ <th>
+  Username
+ </th>
+ <th>
+  Email
+ </th>
+ <th>
+  Phone
+ </th>
+ <th>
+  Details
+ </th>
+ <th>
+  Edit
+ </th>
+ <th>
+  Delete
+ </th>
+    </tr>
+
+    <tr *ngFor="let users of listUsers | paginate:page_size:page_number">
+      <td >
+        {{users.id}}
+      </td>
+      <td >
+        {{users.name}}
+      </td>
+      <td >
+        {{users.username}}
+      </td>
+      <td >
+        {{users.email}}
+      </td>
+      <td >
+        {{users.phone}}
+      </td>
+      <td >
+        <button mat-button color="primary" (click)="UrlDetails(users.id)">Details </button>
+      </td>
+      <td >
+        <button mat-button color="primary" (click)="UrlEdit(users.id)">Edit </button>
+      </td>
+      <td >
+        <button mat-button color="warn" (click)="deleteUsers(users.id)">Delete</button>
+      </td>
+    </tr>
+
+  </table>
+
+  <mat-paginator [length]="listUsers?.length"
+  [pageSize]="page_size"
+  [pageSizeOptions]="pageSizeOptions"
+  (page)="handlePage($event)"
+  aria-label="Select page">
+</mat-paginator>
+</div>
+
+

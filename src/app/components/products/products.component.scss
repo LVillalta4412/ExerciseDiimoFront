@@ -1,0 +1,61 @@
+table {
+  width: 100%;
+
+}
+
+table td, th {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+:host {
+  justify-content: center;
+}
+
+.mat-elevation-z8{
+  padding: 10px !important;
+}
+
+.mat-elevation-z6{
+  width: 60% !important;
+  padding: 10px !important;
+}
+
+.mat-form-field {
+  width: 100%;
+  min-width: 300px;
+}
+
+mat-card-title,
+mat-card-content {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+mat-card{
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.file-picker{
+  background-color: red;
+  color:white;
+  font-family: Roboto, Helvetica, Arial;
+  display: inline-block;
+  margin:5px;
+  padding:10px;
+  box-shadow:0px 1px 3px rgba(0,0,0,0.4);
+  cursor: pointer;
+}
+
+.file-picker + [type='file']{
+  display:none;
+}
+img{
+  width: 100px;
+  height: 80px;
+}
