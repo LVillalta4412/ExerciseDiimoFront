@@ -46,14 +46,16 @@
  <th>
   Delete
  </th>
- <th>
-   Edit image
- </th>
     </tr>
 
     <tr *ngFor="let products of listProducts | paginate2:page_size:page_number">
       <td>
-        <img [src]="products.image" alt="">
+        <div *ngIf="products.image === null">
+            <p>Add image in Edit</p>
+        </div>
+        <div *ngIf="products.image !== null">
+          <img [src]="products.image" alt="">
+        </div>
       </td>
       <td >
         {{products.name}}
@@ -68,17 +70,13 @@
         {{products.quantity}}
       </td>
       <td >
-        {{products.description}}
+        {{products.description ? products.description : "Not Description"}}
       </td>
       <td >
         <button mat-button color="primary" (click)="UrlEdit(products.id)">Edit </button>
       </td>
       <td >
         <button mat-button color="warn" (click)="deleteProducts(products.id)">Delete</button>
-      </td>
-      <td>
-        <label for="file-picker" class="file-picker">Seleccionar archivo</label>
-        <input id="file-picker" (change)="onUpload(products.id, $event)" type="file">
       </td>
     </tr>
 

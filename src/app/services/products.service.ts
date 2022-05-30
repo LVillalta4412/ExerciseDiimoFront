@@ -42,7 +42,7 @@ export class ProductsService {
         .get(`${this.apiURL}/products`)
         .toPromise();
     } catch (err) {
-      console.log(err);
+      /*  console.log(err); */
     }
   }
   // Obtener productos Por Id
@@ -52,7 +52,7 @@ export class ProductsService {
         .get(`${this.apiURL}/products/${id}`)
         .toPromise();
     } catch (err) {
-      console.log(err);
+      /* console.log(err); */
     }
   }
 
@@ -62,10 +62,9 @@ export class ProductsService {
       const result = await this.http
         .get(`${this.apiURL}/products/search/${filter}`)
         .toPromise();
-      console.log(result);
       return result;
     } catch (err) {
-      console.log(err);
+      /* console.log(err); */
     }
   }
 
@@ -102,12 +101,11 @@ export class ProductsService {
         .toPromise();
       Swal.fire(
         'Good job!',
-        'the record has been update successfully',
+        'the image has been update successfully',
         'success'
       )
       return result;
     } catch (err: any) {
-      console.log(err)
       if (err.status === 400) {
         Swal.fire(
           'Status' + ' ' + String(err.status),
@@ -129,7 +127,7 @@ export class ProductsService {
       )
       return true;
     } catch (err) {
-      console.log(err);
+      /* console.log(err); */
     }
   }
 }

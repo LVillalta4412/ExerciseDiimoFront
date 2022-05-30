@@ -63,7 +63,7 @@ export class UsersService {
         .post<Users>(`${this.apiURL}/logout`, JSON.stringify(localStorage.getItem('jwt_token')))
         .toPromise();
     } catch (err) {
-      console.log(err);
+      /*   console.log(err); */
     }
   }
 
@@ -78,10 +78,10 @@ export class UsersService {
         'the password has been updated successfully',
         'success'
       )
-      console.log(result);
+      /*  console.log(result); */
       return result;
     } catch (err) {
-      console.log(err);
+      /*  console.log(err); */
     }
   }
 
@@ -96,10 +96,9 @@ export class UsersService {
         'the email has been send successfully',
         'success'
       )
-
       return result;
     } catch (err) {
-      console.log(err);
+      /*  console.log(err); */
     }
   }
 
@@ -110,7 +109,7 @@ export class UsersService {
         .post<Users>(`${this.apiURL}/time_recover_password/` + token, data)
         .toPromise();
     } catch (err) {
-      console.log(err);
+      /* console.log(err); */
     }
   }
 
@@ -145,7 +144,7 @@ export class UsersService {
     try {
       return await this.http.get(`${this.apiURL}/user`).toPromise();
     } catch (err) {
-      console.log(err);
+      /* console.log(err); */
     }
   }
   // Obtener usuarios Por Id
@@ -155,7 +154,7 @@ export class UsersService {
         .get(`${this.apiURL}/user/${id}`)
         .toPromise();
     } catch (err) {
-      console.log(err);
+      /*  console.log(err); */
     }
   }
 
@@ -166,7 +165,7 @@ export class UsersService {
         .get(`${this.apiURL}/searchtoken/${token}`)
         .toPromise();
     } catch (err) {
-      console.log(err);
+      /*  console.log(err); */
     }
   }
   // Actualizar usuarios
@@ -203,7 +202,7 @@ export class UsersService {
       )
       return result;
     } catch (err) {
-      console.log(err);
+      /*  console.log(err); */
     }
   }
 

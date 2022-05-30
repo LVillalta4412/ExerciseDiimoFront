@@ -37,13 +37,6 @@ export class SaveComponent implements OnInit {
     }
   }
 
-
-
-  async Logout() {
-    const result = await this.userService.removeToken();
-    return result;
-  }
-
   Goback() {
     this.router.navigate(['/products']);
   }

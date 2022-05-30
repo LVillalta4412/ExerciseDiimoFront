@@ -30,15 +30,10 @@ export class EditComponent implements OnInit {
     });
     this.getUsers()
   }
-  async Logout() {
-    const result = await this.userService.removeToken();
-    return result;
-  }
 
   getUsers() {
     this.userService.getUserById(Number(this.id)).then((data: any) => {
       this.user = data;
-      console.log(data);
       return this.user;
     });
   }

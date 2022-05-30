@@ -30,7 +30,6 @@ export class RegisterComponent implements OnInit {
     if (this.form.valid) {
       const result = await this.userService.SaveUsers(this.form.value);
       return result;
-
     } else {
       this.form.markAllAsTouched()
     }

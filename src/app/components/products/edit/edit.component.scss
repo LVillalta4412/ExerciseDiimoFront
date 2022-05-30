@@ -33,3 +33,23 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0;
     }
 input[type=number] { -moz-appearance:textfield; }
+
+.file-picker{
+  background-color: red;
+  color:white;
+  font-family: Roboto, Helvetica, Arial;
+  display: inline-block;
+  margin:5px;
+  padding:10px;
+  box-shadow:0px 1px 3px rgba(0,0,0,0.4);
+  cursor: pointer;
+}
+
+.file-picker + [type='file']{
+  display:none;
+}
+img{
+  width: 100px;
+  height: 80px;
+}
+

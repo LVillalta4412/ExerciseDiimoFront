@@ -40,7 +40,6 @@ export class UsersComponent implements OnInit {
   getAllUsers() {
     this.userService.getUser().then((data: any) => {
       this.listUsers = data;
-      console.log(data);
     });
   }
 
@@ -48,10 +47,6 @@ export class UsersComponent implements OnInit {
     const trash = await this.userService.DeleteUsersById(id);
     this.getAllUsers();
     return trash;
-  }
-
-  Search() {
-
   }
 
   UrlAdd() {
