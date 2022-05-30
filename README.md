@@ -1,27 +1,25 @@
-# ExerciseDiimoFront
+Primeramente tenemos que descargar el proyecto y tener instalado los recursos necesarios paa que funcione correctamente.  Antes de todo debemos tener instalado Angular, Typescript, y node js paa instalacion de paquetes npm.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
+A continuacion dejaré algunos enlaces para las descargas:
 
-## Development server
+-Angular v13:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+https://angular.io/start
 
-## Code scaffolding
+-Typescript:
+https://www.typescriptlang.org/download
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+-Node JS:
+https://nodejs.org/es/download/
 
-## Build
+Ya terminando la instalacion de los recursos necesarios podremos ejecutar el siguiente comando:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+-npm install
 
-## Running unit tests
+Este lo que hace es instalas todas las librerias en el npm de Node JS y asi darle su uso respectivo. 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ya para la ejecucion del proyecto podremos ejecutar:
 
-## Running end-to-end tests
+-ng serve -o
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+y nos desplegara el navegador y seria lo suficiente para ejecutar el proyecto. 
